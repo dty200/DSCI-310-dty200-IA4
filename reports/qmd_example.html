@@ -96,7 +96,7 @@ window.Quarto = {
   <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#aim" id="toc-aim" class="nav-link active" data-scroll-target="#aim">Aim</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
@@ -132,20 +132,20 @@ window.Quarto = {
 </header>
 
 
-<section id="aim" class="level2">
-<h2 class="anchored" data-anchor-id="aim">Aim</h2>
+<section id="aim" class="level1">
+<h1>Aim</h1>
 <p>This project explores the historical population of horses in Canada between 1906 and 1972 for each province.</p>
 </section>
-<section id="data" class="level2">
-<h2 class="anchored" data-anchor-id="data">Data</h2>
+<section id="data" class="level1">
+<h1>Data</h1>
 <p>Horse population data were sourced from the <a href="http://open.canada.ca/en/open-data">Government of Canada’s Open Data website</a> <span class="citation" data-cites="horses1">(<a href="#ref-horses1" role="doc-biblioref">Government of Canada 2017a</a>)</span>, <span class="citation" data-cites="horses2">(<a href="#ref-horses2" role="doc-biblioref">Government of Canada 2017b</a>)</span>.</p>
 </section>
-<section id="methods" class="level2">
-<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<section id="methods" class="level1">
+<h1>Methods</h1>
 <p>The R programming language <span class="citation" data-cites="R">(<a href="#ref-R" role="doc-biblioref">R Core Team 2019</a>)</span> and the following R packages were used to perform the analysis: knitr <span class="citation" data-cites="knitr">(<a href="#ref-knitr" role="doc-biblioref">Xie 2014</a>)</span>, tidyverse <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham 2017</a>)</span>, and Quarto <span class="citation" data-cites="Allaire_Quarto_2022">(<a href="#ref-Allaire_Quarto_2022" role="doc-biblioref">Allaire et al. 2022</a>)</span>. <em>Note: this report is adapted from Timbers <span class="citation" data-cites="ttimbers-horses">Timbers (<a href="#ref-ttimbers-horses" role="doc-biblioref">2020</a>)</span>.</em></p>
 </section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="results" class="level1">
+<h1>Results</h1>
 <div id="fig-horse-pops" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-horse-pops-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -217,13 +217,14 @@ Table&nbsp;1: Standard deviation of historical (1906-1972) horse populations for
 </figure>
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 <p>Note that we define standard deviation (of a sample) as</p>
 <p><span class="math display">\[s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }\]</span></p>
 <p>Additionally, note that in <a href="#tbl-horses-sd" class="quarto-xref">Table&nbsp;1</a> we consider the sample standard deviation of the number of horses during the same time span as <a href="#fig-horse-pops" class="quarto-xref">Figure&nbsp;1</a>.</p>
-<div id="fig-horse-pop-largest-sd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-horse-pop-largest-sd" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig.pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-horse-pop-largest-sd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../results/horse_pop_plot_largest_sd.png" class="img-fluid figure-img" style="width:60.0%">
+<img src="../results/horse_pop_plot_largest_sd.png" class="img-fluid figure-img" style="width:60.0%" data-fig.pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-horse-pop-largest-sd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Horse populations for the province with the largest standard deviation.
@@ -231,8 +232,9 @@ Figure&nbsp;2: Horse populations for the province with the largest standard devi
 </figure>
 </div>
 <p>In <a href="#fig-horse-pop-largest-sd" class="quarto-xref">Figure&nbsp;2</a> we zoom in and look at the province of Saskatchewan, which had the largest spread of values in terms of standard deviation.</p>
+<div style="page-break-after: always;"></div>
 </section>
-<section id="references" class="level2 unnumbered">
+<section id="references" class="level1 unnumbered">
 
 
 </section>
