@@ -25,15 +25,17 @@ Horse population data were sourced from the [Government of Canada's Open Data we
 
 # Methods
 
-The R programming language [@R] and the following R packages were used to perform the analysis: knitr [@knitr], tidyverse [@tidyverse], and Quarto [@Allaire_Quarto_2022]. *Note: this report is adapted from Timbers @ttimbers-horses.*
+The R programming language [@R] and the following R packages were used to perform the analysis: knitr [@knitr], tidyverse [@tidyverse], and Quarto [@Allaire_Quarto_2022]. 
+*Note: this report is adapted from Timbers @ttimbers-horses.*
 
 # Results
 
 ![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse-pops}
 
-We can see from Figure @fig-horse-pops that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada. All provinces have had a decline in horse populations since 1940. This is likely due to the rebound of the Canadian automotive industry after the Great Depression and the Second World War. An interesting follow-up visualisation would be car sales per year for each Province over the time period visualised above to further support this hypothesis.
+We can see from @fig-horse-pops that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada. All provinces have had a decline in horse populations since 1940. This is likely due to the rebound of the Canadian automotive industry after the Great Depression and the Second World War. An interesting follow-up visualisation would be car sales per year for each Province over the time period visualised above to further support this hypothesis.
 
 Suppose we were interested in looking in more closely at the province with the highest spread (in terms of standard deviation) of horse populations. We present the standard deviations in @tbl-horses-sd.
+
 
 ```{r}
 #| label: tbl-horses-sd
